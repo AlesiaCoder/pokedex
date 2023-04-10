@@ -14,8 +14,7 @@
             barColor() {
                 return {
                     'bg-sucess': this.count < 20,
-                    'bg-warning': this.count >= 20 && this.count
-                    <=30,
+                    'bg-warning': this.count >= 20 && this.count<=30,
                     'bg-danger': this.count > 30,
                 }
             }
@@ -37,7 +36,7 @@
             <h3>{{ count }}</h3>
             <div class="progress">
                 <div :class="['progress-bar', barColor]" role="progressbar" :style="{width: count +'%'}" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                {{ count }}%
+                    {{ count }}%
                 </div>
             </div>
         </div>

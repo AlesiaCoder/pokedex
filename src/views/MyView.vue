@@ -1,4 +1,5 @@
 <script>
+import ParentComponent from '../components/myComponents/props/ParentComponent.vue';
 import ComputedProps from '../components/myComponents/computed-properties/ComputedProps.vue'
 import DirectiveVFor from '../components/myComponents/directives/DirectiveVFor.vue';
 import DirectiveVModel from '../components/myComponents/directives/DirectiveVModel.vue';
@@ -7,7 +8,7 @@ import DirectiveVShow from '../components/myComponents/directives/DirectiveVShow
 import SingleComponent from '../components/myComponents/SingleComponent.vue';
 import RawHtmlData from '../components/myComponents/RawHtmlData.vue';
 export default {
-  components: { SingleComponent, RawHtmlData, DirectiveVShow, DirectiveVIf, DirectiveVModel, DirectiveVFor, ComputedProps },};
+  components: { SingleComponent, RawHtmlData, DirectiveVShow, DirectiveVIf, DirectiveVModel, DirectiveVFor, ComputedProps, ParentComponent },};
 </script>
 
 <template>
@@ -28,6 +29,8 @@ export default {
         <directive-v-for></directive-v-for>
         ----------------------------------
         <computed-props></computed-props>
+        ----------------------------------
+        <parent-component></parent-component>
     </div>
 </template>
 
