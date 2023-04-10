@@ -1,41 +1,45 @@
 <script>
-import ParentComponent from '../components/myComponents/props/ParentComponent.vue';
-import ComputedProps from '../components/myComponents/computed-properties/ComputedProps.vue'
+import ComputedProps from '../components/myComponents/computed-properties/ComputedProps.vue';
 import DirectiveVFor from '../components/myComponents/directives/DirectiveVFor.vue';
+import DirectiveVif from '../components/myComponents/directives/DirectiveVif.vue';
 import DirectiveVModel from '../components/myComponents/directives/DirectiveVModel.vue';
-import DirectiveVIf from '../components/myComponents/directives/DirectiveVIf.vue';
 import DirectiveVShow from '../components/myComponents/directives/DirectiveVShow.vue';
-import SingleComponent from '../components/myComponents/SingleComponent.vue';
+import ParentComponent from '../components/myComponents/props/ParentComponent.vue';
 import RawHtmlData from '../components/myComponents/RawHtmlData.vue';
+import SingleComponent from '../components/myComponents/SingleComponent.vue';
 export default {
-  components: { SingleComponent, RawHtmlData, DirectiveVShow, DirectiveVIf, DirectiveVModel, DirectiveVFor, ComputedProps, ParentComponent },};
+  components: { SingleComponent, RawHtmlData, DirectiveVShow, DirectiveVif, DirectiveVModel, DirectiveVFor, ComputedProps, ParentComponent },};
 </script>
 
 <template>
     <div>
-        <h1>My Single Page from FemCoder</h1>
-        <h3>Lorem ipsum dolor, sit amet consectetur...</h3>
-        ----------------------------------
+        <h1>My Single Page from FEMCoder Málaga</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+        --------------------------------------------------------------------------------------------
+        <raw-html-data></raw-html-data> 
+        --------------------------------------------------------------------------------------------
         <single-component></single-component>
-        ----------------------------------
-        <raw-html-data></raw-html-data>
-        ----------------------------------
-        <directive-v-show></directive-v-show>
-        ----------------------------------
-        <directive-v-if></directive-v-if>
-        ----------------------------------
+        <single-component></single-component>
+        <single-component></single-component>
+        <single-component></single-component>
+        --------------------------------------------------------------------------------------------
+        <DirectiveVShow></DirectiveVShow>
+        --------------------------------------------------------------------------------------------
+        <directive-vif></directive-vif>
+        --------------------------------------------------------------------------------------------
         <directive-v-model></directive-v-model>
-        ----------------------------------
+        --------------------------------------------------------------------------------------------
         <directive-v-for></directive-v-for>
-        ----------------------------------
+        --------------------------------------------------------------------------------------------
         <computed-props></computed-props>
-        ----------------------------------
+        --------------------------------------------------------------------------------------------
         <parent-component></parent-component>
-    </div>
-</template>
+        
+        </div>
+</template> 
 
 <style lang="css" scoped>
-    h1 {
-        color: pink;
-    }
+h1{
+    color: red;
+}
 </style>
